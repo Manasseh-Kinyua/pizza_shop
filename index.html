@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Castagna Pizza</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container p-3">
+        <form class="pt-3" action="index.html" method="post">
+          <div class="col-md">
+            <h3>Size of Pizza</h3>
+            <div class="radio">
+              <label><input type="radio" name="optsize" value="small" checked>Small</label>
+              <p>KSH: 500</p>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optsize" value="medium">Medium</label>
+              <p>KSH: 800</p>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optsize" value="large">Large</label>
+              <p>KSH: 1200</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="selcrust"><h3>Select type of Crust</h3></label>
+            <select class="form-control" name="">
+              <option selected>Select</option>
+              <option>Crispy</option>
+              <option>Stuffed</option>
+              <option>Gluten-Free</option>
+              <option>Flat-Bread</option>
+              <option>Chicken-Barbeque</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
