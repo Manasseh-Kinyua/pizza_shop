@@ -5,8 +5,8 @@ function order(size,crust,topping,delivery,cost,total) {
   this.delivery = delivery;
   this.cost = parseInt(size) + parseInt(crust) + parseInt(topping);
   this.total = parseInt(size) + parseInt(crust) + parseInt(topping) + parseInt(delivery);
-  
-  
+
+
 }
 function myButton(event) {
   event.preventDefault()
@@ -14,10 +14,10 @@ function myButton(event) {
   var pizzaSize = document.querySelector('input[name = size]:checked').value
   var pizzaTopping = document.querySelector('input[name =topping]:checked').value
   var pizzaCrust = document.getElementById('crust').value
-  
+
   var pizzaOrder = new order(pizzaSize, pizzaCrust, pizzaTopping)
   var amount = new order(pizzaSize, pizzaTopping,pizzaCrust)
-  
+
   $("ul#order").append("<li>Size Amount: <span class='order'>" + pizzaOrder.size + "</span></li>");
   $("ul#order").append("<li>Crust Amount: <span class='order'>" + pizzaOrder.crust + "</span></li>");
   $("ul#order").append("<li>Topping Amount: <span class='order'>" + pizzaOrder.topping + "</span></li>");
@@ -29,7 +29,7 @@ function myButton(event) {
     alert('Your order will be delivered after check-out')
   }
 
-  
+
 }
 
 function checkOut() {
@@ -43,16 +43,5 @@ function checkOut() {
   $("ol#summary").append("<li>Delivery Amount: <span class='summary'>" + totalAmount.delivery + "</span></li>");
   $("ol#summary").append("<li>Pizza Cost: <span class='summary'>" + totalAmount.cost + "</span></li>");
   $("ol#summary").append("<li>Total Charge: <span class='summary'>" + totalAmount.total + "</span></li>");
-  
+
 }
-
-  
-
-   
-    
-    
-
-  
-    
-
-
