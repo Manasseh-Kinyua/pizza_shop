@@ -1,0 +1,37 @@
+body {
+  background: url(../Images/background.jpg);
+}
+h1 {
+  font-style: italic;
+  color: goldenrod;
+  text-align: center;
+}
+p {
+  color: lightseagreen;
+  text-align: center;
+
+}
+#box-model {
+  margin: 50px;
+  border: solid;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+#photos {
+  width: 1250px;
+  height: 250px;
+  margin-left: 30px;
+}
+.image{
+  margin: 10px;
+}
+heading {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: lightseagreen;
+}
+ul,ol {
+  font-family:serif;
+  font-style: italic;
+}

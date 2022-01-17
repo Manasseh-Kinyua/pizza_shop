@@ -1,88 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Castagna Pizza</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="scripts/script.js"></script>
+    <title>PIZZA</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="container p-3">
-        <form class="pt-3" action="index.html" method="post">
-          <div class="col-md">
-            <h3>Size of Pizza</h3>
-            <div class="radio">
-              <label><input type="radio" name="optsize" value="small" checked>Small</label>
-              <p>KSH: 500</p>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="optsize" value="medium">Medium</label>
-              <p>KSH: 800</p>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="optsize" value="large">Large</label>
-              <p>KSH: 1200</p>
-            </div>
+    <h1>DELICIOUSA AMARIAN PIZZA</h1>
+    <p>
+      We have finally gone digital!!<br>
+      Celebrating life and happy occasions will be made more memeorable by our amazing amarian pizza.<br>
+      Pizza that is made from the heart with a sprinkle of love, probably a bale of flour and an emotional sizing of cheese.<br>
+      You can now order pizza with much more ease and choose whether to have it delivered or pick-up at a certain time. 
+    </p>
+    
+    <form id="box-model">
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Size of Pizza: </legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="size" value="250">
+            <span class="form-check-label">Small</span>
           </div>
-
-          <div class="form-group pt-4">
-            <label for="selcrust"><h3>Select type of Crust</h3></label>
-            <select class="form-control" name="">
-              <option selected>Select</option>
-              <option>Crispy</option>
-              <option>Stuffed</option>
-              <option>Gluten-Free</option>
-              <option>Flat-Bread</option>
-              <option>Chicken-Barbeque</option>
-            </select>
+          <div class="details">
+            <span class="price">KSH 250</span>
           </div>
-
-          <div class="col-md pt-4">
-            <h3>Select Topping</h3>
-            <div class="checkbox">
-              <div>
-                <label><input type="checkbox" value="">Meat-Deluxe</label>
-                <p>KSH: 200</p>
-              </div>
-              <div>
-                <label><input type="checkbox" value="">Spicy Boerewors</label>
-                <p>KSH: 300</p>
-              </div>
-              <div>
-                <label><input type="checkbox" value="">Chicken Hawaiian</label>
-                <p>KSH: 250</p>
-              </div>
-              <div>
-                <label><input type="checkbox" value="">Papperoni</label>
-                <p>KSH: 150</p>
-              </div>
-              <div>
-                <label><input type="checkbox" value="">Roast Veg and Feta</label>
-                <p>KSH: 400</p>
-              </div>
-            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="size" value="400">
+            <span class="form-check-label">Medium</span>
           </div>
-
-          <div class="col-md">
-            <div class="checkbox">
-              <h4>DELIVERY</h4>
-              <label><input type="checkbox" value="">Have your order delivered to you.</label>
-              <p>KSH: 200</p>
-            </div>
+          <div class="details">
+            <span class="price">KSH 400</span>
           </div>
-
-          <div class="container">
-            <button class="btn btn-primary" type="button" name="button">ORDER</button>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="size" id="size" value="700">
+            <span class="form-check-label">Large</span>
           </div>
-
-          <div class="container">
-            <button class="btn btn-success mt-2" type="button" name="button">Make Another Order</button>
+          <div class="details">
+            <span class="price">KSH 700</span>
           </div>
-        </form>
+        </div>
+      </fieldset>
+      <div class="input-group mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Crust Preference: </legend>
+        <select class="form-select" id="crust">
+          <option selected>Open this menu</option>
+          <option value="300">Flatbread - Ksh 300</option>
+          <option value="200">Thin Crust - Ksh 200</option>
+          <option value="250">Sicilian - Ksh 250</option>
+          <option value="350">Cheese-Stuffed - Ksh 350</option>
+          <option value="250">Stuffed - Ksh 250</option>
+        </select>
       </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Topping: </legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="250">
+            <span class="form-check-label">Meat-Deluxe</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 250</span>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="100">
+            <span class="form-check-label">Spicy Boerewors</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 100</span>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="150">
+            <span class="form-check-label">Veggie</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 150</span>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="250">
+            <span class="form-check-label">Chicken Barbeque</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 250</span>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="200">
+            <span class="form-check-label">Chicken Hawaiian</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 200</span>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="100">
+            <span class="form-check-label">Pepperoni</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 100</span>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="topping" id="topping" value="150">
+            <span class="form-check-label">Roast Veg and Feta</span>
+          </div>
+          <div class="details">
+            <span class="price">KSH 150</span>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="delivery" value="200">
+        <span class="form-check-label">DELIVERY</span>
+        <div class="details">
+          <span class="price">KSH 200</span>
+        
+        </div>
+      </div>
+      <div class="form-check-label">
+        <button onclick="myButton(event)" type="submit">Make an Order</button>
+      </div>
+      <button type="reset">Make Another Order</button>
+      <div class="input-group mb-3">
+        <button onclick="checkOut()" class="btn btn-outline-secondary" type="button" id="button">Checkout</button>
+      </div>
+    </form>
+    <heading>Order</heading>
+    <ul id="order">
+
+    </ul>
+    <heading>Summary</heading>
+    <ol id="summary">
+
+    </ol>
+    <div id="photos">
+      <img src="Images/pizza2.jpg" alt="A photo of pizza" class="image">
+      <img src="Images/pizza.jpg" alt="Pizza photo" class="image">
+      <img src="Images/pizza3.jpg" alt="pizza photo" class="image">
+      <img src="Images/slice.jpg" alt="A pizza slice" class="image">
     </div>
   </body>
 </html>
