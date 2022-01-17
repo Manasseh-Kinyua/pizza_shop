@@ -1,4 +1,4 @@
-# DELICIOUSA AMARIAN PIZZA
+# AMARIAN PIZZA
 #### Created by Manasseh kinyua
 ####Author {Manasseh Kinyua}(https://Manasseh-Kinyua.github.io/pizza-hub/)
 #### Description
